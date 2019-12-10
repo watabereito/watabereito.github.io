@@ -9,6 +9,29 @@ div{
   margin: 0px;
   padding: 0px;
 }
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
 header{
   background-image: url(IMG_4930.jpeg);
   background-size: cover;
@@ -49,9 +72,6 @@ width: 100%;
   margin-bottom: 20px;
 }
 /*ここまでがtop*/
-main{
-  height: 1400px;
-}
 .ABOUT{
   margin-top: 200px;
   height: 900px;
@@ -106,7 +126,6 @@ background-color: #2DFF57;
 /*ここまでがabout*/
 .portfolio{
   margin top: 100px;
-  height: 600px;
 }
 .portfolio_tittle{
   display: flex;
@@ -159,7 +178,7 @@ border-bottom: 3px solid #00FF00;
   background-color: #000000;
   opacity: 0.7;
   transition:1.0s;
-  height: 170px;
+  height: 200px;
 }
 .hutter_content1:hover, .hutter_content2:hover,.hutter_content3:hover{
   background-color: #99FF00;
@@ -177,4 +196,7 @@ color: #99FF00;
 }
 .products,.Enperience,.countries{
   padding-top: 10px;
+}
+.tab_content{
+  display: block;
 }
